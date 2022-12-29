@@ -119,16 +119,16 @@ and mapping and image guide robotic surgery. I am co-advised by Dr. <a href="htt
   <div class="w3-container w3-padding-32" id="projects">
     <h2>Recent Projects</h2>
     <p class="w3-justify">
-        Actually, model compression is a kind of technique for developing portable deep neural networks with lower memory and computation costs. I have done several projects in Huawei including some smartphones' applications in 2019 and 2020 (e.g. Mate 30 and Honor V30). Currently, I am leading the AdderNet project, which aims to develop a series of deep learning models using only additions (<a href="https://www.reddit.com/r/MachineLearning/comments/ekw2s1/r_addernet_do_we_really_need_multiplications_in/">Discussions on Reddit</a>).
+        During my Ph.D. study (from April 2019 to present), the objective of my research is to develop 3D reconstruction techniques for deformable environments to facilitate medical robots working in minimally invasive surgery. I have been working on two research projects.
     </p>
 
-        <h4><li>Adder Neural Networks</li></h4>
-        <img style="width:96%;" src="images/AdderNet.jpg"> 
+        <h4><li>3D Reconstruction of Colon Structures and Textures from Colonoscopic Videos</li></h4>
+        <img style="width:32%;" src="images/atlas200.png"> &nbsp&nbsp <img style="width:60%;" src="images/video.gif">
         <p class="w3-justify">
-        <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">Project Page</a> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2101.10015.pdf">Hardware Implementation</a>
+        <a style="color: #447ec9" href="https://github.com/zsustc/colon_reconstruction_dataset">Developed Colonoscopy Simulator and Released Code</a> | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9291464">Hardware Implementation</a>
         </p>
         <p class="w3-justify">
-        I would like to say, <span style="color:red">AdderNet is very cool!</span> The initial idea was came up in about 2017 when climbing with some friends at Beijing. By replacing all convolutional layers (except the first and the last layers), we now can obtain comparable performance on ResNet architectures. In addition, to make the story more complete, we recent release the hardware implementation and some quantization methods. The results are quite encouraging, we can reduce both <strong>the energy consumption and thecircuit areas significantly without affecting the performance</strong>. Now, we are working on more applications to reduce the costs of launching AI algorithms such as low-level vision, detection, and NLP tasks.
+        In this research project, I focused on developing SLAM-based frameworks to reconstruct the 3D maps of the deformable human colon from standard colonoscopy procedures, thus the unsurveyed regions (where precancerous polyps may reside) can be shown on the reconstructed colon maps and help colonoscopists to ensure more colonic surfaces are inspected and to reduce polyps missing rate. Due to the unavailability of complete colonoscopy datasets, I developed a realistic colonoscopy simulator that can simulate the colonoscopy procedures and generate complete colonoscopy datasets for validation of deformable reconstruction algorithms. The developed simulator was made publicly available to promote research in the field. 
         </p> 
 
         <h4><li>GhostNet on MindSpore: SOTA Lightweight CV Networks</li></h4>
