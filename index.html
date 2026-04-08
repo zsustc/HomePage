@@ -132,12 +132,17 @@
     </p>
 
         <h4><li>Complete Surgical Scene 3D Reconstruction under Partial Observability</li></h4>
-        <img style="width:41%;" src="images/miccai2025_result.png"><img style="width:59%;" src="images/miccai2025.gif">
+        <img style="width:41%;" src="images/occlusion_scene_tool.png"><img style="width:59%;" src="images/endoLRM.gif">
         <p class="w3-justify">
-        <a style="color: #447ec9" href="https://arxiv.org/abs/2503.22177">Technical Details</a> | <a style="color: #447ec9" href=" ">Code and dataset will be released soon </a>
+        <a style="color: #447ec9" href="https://arxiv.org/abs/2503.22177">Technical Details</a> | <a style="color: #447ec9" href="https://github.com/MichaelWangGo/EndoLRMGS">Code and dataset</a>
         </p>
         <p class="w3-justify">
-        This work proposes a novel framework that integrates square-root velocity function (SRVF)-based elastic shape registration technique with an embedded deformation (ED) graph approach to reconstruct the 3D articular surface of the acetabulum by fusing multiple views of 2D pre-operative pelvic X-ray images and a hemispherical surface model. Validations using both simulation and real patient datasets are performed to demonstrate the robustness and the potential clinical value of the proposed algorithm. The reconstruction result can assist surgeons in selecting the correct acetabular cup on the first attempt in primary THA, minimising the need for revision surgery.
+          Complete reconstruction of surgical scenes is crucial for robot-assisted surgery (RAS). 
+          Deep depth estimation is promising but existing works struggle with depth discontinuities, resulting in noisy predictions 
+          at object boundaries and do not achieve complete reconstruction omitting occluded surfaces.
+          To address these issues we propose EndoLRMGS, that combines Large Reconstruction Modelling (LRM) and Gaussian Splatting (GS), 
+          for complete surgical scene reconstruction. GS reconstructs deformable tissues and LRM generates 3D models for surgical tools while position 
+          and scale are subsequently optimized by introducing orthogonal perspective joint projection optimization (OPjPO) to enhance accuracy.
         </p> 
 
         <h4><li>3D Acetabular Surface Reconstruction from 2D Pre-operative X-ray Images using SRVF Elastic Registration and Deformation Graph</li></h4>
